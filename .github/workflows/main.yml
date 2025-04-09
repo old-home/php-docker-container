@@ -22,6 +22,6 @@ jobs:
             .
       - name: Push Docker Image
         run: |
-          docker push "ghcr.io/old-home/php:latest"
-          docker push "ghcr.io/old-home/php:$(echo $GITHUB_SHA | head -c7)"
+          docker push "ghcr.io/old-home/php-with-docker-cli:latest"
+          docker push "ghcr.io/old-home/php-with-docker-cli:$(echo $GITHUB_SHA | head -c7)"
 
